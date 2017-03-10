@@ -17,21 +17,21 @@ import java.util.ArrayList;
  *
  * @author Usuario Dell
  */
-public class AdminHombreLobo {
+public class AdminMinotauro {
 
-    ArrayList<Hombre_Lobo> listalobo = new ArrayList();
+    ArrayList<Minotauro> listaminotauro = new ArrayList();
     File archivo = null;
 
-    public AdminHombreLobo(String path) {
+    public AdminMinotauro(String path) {
         archivo = new File(path);
     }
 
-    public ArrayList<Hombre_Lobo> getListalobo() {
-        return listalobo;
+    public ArrayList<Minotauro> getListaminotauro() {
+        return listaminotauro;
     }
 
-    public void setListalobo(ArrayList<Hombre_Lobo> listalobo) {
-        this.listalobo = listalobo;
+    public void setListaminotauro(ArrayList<Minotauro> listaminotauro) {
+        this.listaminotauro = listaminotauro;
     }
 
     public File getArchivo() {
@@ -44,22 +44,21 @@ public class AdminHombreLobo {
 
     @Override
     public String toString() {
-        return "AdminHombreLobo{" + "listalobo=" + listalobo + '}';
+        return "AdminMinotauro{" + "listaminotauro=" + listaminotauro + '}';
     }
-    public void setHombreLobo(Hombre_Lobo hl){
-        this.listalobo.add(hl);
+    public void setMinotauro(Minotauro m){
+        this.listaminotauro.add(m);
     }
-    
      public void cargarArchivo() {
         try {
-            listalobo = new ArrayList();
-            Hombre_Lobo temp;
+            listaminotauro = new ArrayList();
+            Minotauro temp;
             if (archivo.exists()) {
                 FileInputStream entrada = new FileInputStream(archivo);
                 ObjectInputStream objeto = new ObjectInputStream(entrada);
                 try {
-                    while ((temp = (Hombre_Lobo) objeto.readObject()) != null) {
-                        listalobo.add(temp);
+                    while ((temp = (Minotauro) objeto.readObject()) != null) {
+                        listaminotauro.add(temp);
                     }
                 } catch (EOFException e) {
                 }
@@ -77,7 +76,7 @@ public class AdminHombreLobo {
         try {
             fw = new FileOutputStream(archivo);
             bw = new ObjectOutputStream(fw);
-            for (Hombre_Lobo t : listalobo) {
+            for (Minotauro t : listaminotauro) {
                 bw.writeObject(t);
             }
             bw.flush();
@@ -91,4 +90,6 @@ public class AdminHombreLobo {
         }
     }
 
+
+    
 }

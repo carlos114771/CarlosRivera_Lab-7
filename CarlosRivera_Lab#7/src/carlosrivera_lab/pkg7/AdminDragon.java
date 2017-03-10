@@ -50,7 +50,8 @@ public class AdminDragon {
     public void setDragon(Dragón d) {
         this.listadragon.add(d);
     }
-  public void cargarArchivo() {
+
+    public void cargarArchivo() {
         try {
             listadragon = new ArrayList();
             Dragón temp;
@@ -89,4 +90,5 @@ public class AdminDragon {
             } catch (Exception e) {
             }
         }
-    }}
+    }
+}
