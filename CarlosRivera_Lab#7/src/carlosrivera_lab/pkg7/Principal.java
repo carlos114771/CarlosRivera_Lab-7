@@ -62,6 +62,12 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        menu_popup_alumno = new javax.swing.JPopupMenu();
+        eliminar = new javax.swing.JMenuItem();
+        modificar = new javax.swing.JMenuItem();
+        menu_popup_bestias = new javax.swing.JPopupMenu();
+        eliminar_bestia = new javax.swing.JMenuItem();
+        modificar_bestia = new javax.swing.JMenuItem();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         jTabbedPane2 = new javax.swing.JTabbedPane();
@@ -71,7 +77,6 @@ public class Principal extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         nickname_alumno = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        ataque_alumno = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         defensa_alumno = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
@@ -85,6 +90,7 @@ public class Principal extends javax.swing.JFrame {
         jLabel34 = new javax.swing.JLabel();
         numero_alumno = new javax.swing.JTextField();
         carrera_alumno = new javax.swing.JTextField();
+        ataque_alumno = new javax.swing.JTextField();
         jPanel4 = new javax.swing.JPanel();
         jTabbedPane3 = new javax.swing.JTabbedPane();
         jPanel5 = new javax.swing.JPanel();
@@ -145,8 +151,33 @@ public class Principal extends javax.swing.JFrame {
         crear_minotauro = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tabla_guerreros = new javax.swing.JTable();
+        tabla_alumnos = new javax.swing.JTable();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        tabla_bestias = new javax.swing.JTable();
+        jPanel9 = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
+
+        eliminar.setText("Eliminar");
+        eliminar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eliminarActionPerformed(evt);
+            }
+        });
+        menu_popup_alumno.add(eliminar);
+
+        modificar.setText("jMenuItem1");
+        menu_popup_alumno.add(modificar);
+
+        eliminar_bestia.setText("jMenuItem1");
+        eliminar_bestia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eliminar_bestiaActionPerformed(evt);
+            }
+        });
+        menu_popup_bestias.add(eliminar_bestia);
+
+        modificar_bestia.setText("jMenuItem2");
+        menu_popup_bestias.add(modificar_bestia);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -161,6 +192,9 @@ public class Principal extends javax.swing.JFrame {
         jLabel5.setText("Salud");
 
         jLabel6.setText("Puntos");
+
+        puntos_alumno.setEditable(false);
+        puntos_alumno.setText("0");
 
         crear_alumno.setText("Crear");
         crear_alumno.addActionListener(new java.awt.event.ActionListener() {
@@ -204,14 +238,14 @@ public class Principal extends javax.swing.JFrame {
                                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                                 .addComponent(nickname_alumno, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addComponent(nombre_alumno, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addComponent(ataque_alumno, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addComponent(defensa_alumno, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(salud_alumno, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(puntos_alumno, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(edad_alumno, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(numero_alumno, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(carrera_alumno, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 131, Short.MAX_VALUE)
+                                            .addComponent(defensa_alumno, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(salud_alumno, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(puntos_alumno, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(edad_alumno, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(numero_alumno, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(carrera_alumno, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ataque_alumno, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 143, Short.MAX_VALUE)
                 .addComponent(crear_alumno)
                 .addGap(56, 56, 56))
         );
@@ -259,7 +293,7 @@ public class Principal extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel34)
                     .addComponent(carrera_alumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(33, Short.MAX_VALUE))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Alumnos", jPanel3);
@@ -344,7 +378,7 @@ public class Principal extends javax.swing.JFrame {
                     .addComponent(puntos_dragon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(crear_dragon)
-                .addContainerGap(67, Short.MAX_VALUE))
+                .addContainerGap(52, Short.MAX_VALUE))
         );
 
         jTabbedPane3.addTab("Dragón", jPanel5);
@@ -429,7 +463,7 @@ public class Principal extends javax.swing.JFrame {
                     .addComponent(puntos_fenix, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(39, 39, 39)
                 .addComponent(crear_fenix)
-                .addContainerGap(46, Short.MAX_VALUE))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
 
         jTabbedPane3.addTab("Fénix", jPanel6);
@@ -514,7 +548,7 @@ public class Principal extends javax.swing.JFrame {
                     .addComponent(puntos_lobo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(crear_hombre_lobo)
-                .addContainerGap(67, Short.MAX_VALUE))
+                .addContainerGap(52, Short.MAX_VALUE))
         );
 
         jTabbedPane3.addTab("Hombre Lobo", jPanel7);
@@ -530,6 +564,9 @@ public class Principal extends javax.swing.JFrame {
         jLabel29.setText("Salud");
 
         jLabel30.setText("Puntos");
+
+        puntos_minotauro.setEditable(false);
+        puntos_minotauro.setText("0");
 
         crear_minotauro.setText("Crear");
         crear_minotauro.addActionListener(new java.awt.event.ActionListener() {
@@ -599,7 +636,7 @@ public class Principal extends javax.swing.JFrame {
                     .addComponent(puntos_minotauro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(crear_minotauro)
-                .addContainerGap(67, Short.MAX_VALUE))
+                .addContainerGap(52, Short.MAX_VALUE))
         );
 
         jTabbedPane3.addTab("Minotauro", jPanel8);
@@ -611,11 +648,11 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jTabbedPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 574, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jTabbedPane3)
                 .addContainerGap())
@@ -642,7 +679,7 @@ public class Principal extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Creacion", jPanel1);
 
-        tabla_guerreros.setModel(new javax.swing.table.DefaultTableModel(
+        tabla_alumnos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -650,26 +687,63 @@ public class Principal extends javax.swing.JFrame {
                 "Nombre", "Nickname", "Poder de Ataque", "Poder de Defensa", "Salud", "Puntos", "Numero de Cuenta", "Carrera", "Edad"
             }
         ));
-        jScrollPane1.setViewportView(tabla_guerreros);
+        tabla_alumnos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tabla_alumnosMouseClicked(evt);
+            }
+        });
+        jScrollPane1.setViewportView(tabla_alumnos);
+
+        tabla_bestias.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Nombre", "Nickname", "Poder de Ataque", "Poder de Defensa", "Salud", "Puntos"
+            }
+        ));
+        tabla_bestias.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tabla_bestiasMouseClicked(evt);
+            }
+        });
+        jScrollPane2.setViewportView(tabla_bestias);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+            .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 596, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 608, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+            .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 443, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(38, 38, 38)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Listar", jPanel2);
+
+        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
+        jPanel9.setLayout(jPanel9Layout);
+        jPanel9Layout.setHorizontalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 620, Short.MAX_VALUE)
+        );
+        jPanel9Layout.setVerticalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 440, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("Simulacion", jPanel9);
 
         setJMenuBar(jMenuBar1);
 
@@ -677,10 +751,7 @@ public class Principal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jTabbedPane1)
-                .addContainerGap())
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -709,14 +780,14 @@ public class Principal extends javax.swing.JFrame {
                 Double.parseDouble(defensa_alumno.getText()),
                 Double.parseDouble(salud_alumno.getText()),
                 Double.parseDouble(puntos_alumno.getText())));
-        DefaultTableModel modelo = (DefaultTableModel) tabla_guerreros.getModel();
+        DefaultTableModel modelo = (DefaultTableModel) tabla_alumnos.getModel();
         Object[] newrow = {nombre_alumno.getText(),
             nickname_alumno.getText(), Double.parseDouble(ataque_alumno.getText()),
             Double.parseDouble(defensa_alumno.getText()),
             Double.parseDouble(salud_alumno.getText()), Double.parseDouble(puntos_alumno.getText()),
             Integer.parseInt(numero_alumno.getText()), carrera_alumno.getText(), edad_alumno.getValue()};
         modelo.addRow(newrow);
-        tabla_guerreros.setModel(modelo);
+        tabla_alumnos.setModel(modelo);
         JOptionPane.showMessageDialog(this, "Alumno Creado ");
         ag = new AdminGuerreros("./guerreros.cbm");
         ag.cargarArchivo();
@@ -739,13 +810,13 @@ public class Principal extends javax.swing.JFrame {
                 Double.parseDouble(defensa_dragon.getText()),
                 Double.parseDouble(salud_dragon.getText()),
                 Double.parseDouble(puntos_dragon.getText())));
-        DefaultTableModel modelo = (DefaultTableModel) tabla_guerreros.getModel();
+        DefaultTableModel modelo = (DefaultTableModel) tabla_bestias.getModel();
         Object[] newrow = {nombre_dragon.getText(),
             nickname_dragon.getText(), Double.parseDouble(ataque_dragon.getText()),
             Double.parseDouble(defensa_dragon.getText()),
             Double.parseDouble(salud_dragon.getText()), Double.parseDouble(puntos_dragon.getText())};
         modelo.addRow(newrow);
-        tabla_guerreros.setModel(modelo);
+        tabla_bestias.setModel(modelo);
         JOptionPane.showMessageDialog(this, "Dragon creado ");
         ag = new AdminGuerreros("./guerreros.cbm");
         ag.cargarArchivo();
@@ -768,13 +839,13 @@ public class Principal extends javax.swing.JFrame {
                 Double.parseDouble(defensa_fenix.getText()),
                 Double.parseDouble(salud_fenix.getText()),
                 Double.parseDouble(puntos_fenix.getText())));
-        DefaultTableModel modelo = (DefaultTableModel) tabla_guerreros.getModel();
+        DefaultTableModel modelo = (DefaultTableModel) tabla_bestias.getModel();
         Object[] newrow = {nombre_fenix.getText(),
             nickname_fenix.getText(), Double.parseDouble(ataque_fenix.getText()),
             Double.parseDouble(defensa_fenix.getText()),
             Double.parseDouble(salud_fenix.getText()), Double.parseDouble(puntos_fenix.getText())};
         modelo.addRow(newrow);
-        tabla_guerreros.setModel(modelo);
+        tabla_bestias.setModel(modelo);
         JOptionPane.showMessageDialog(this, "Fenix creado ");
         ag = new AdminGuerreros("./guerreros.cbm");
         ag.cargarArchivo();
@@ -797,13 +868,13 @@ public class Principal extends javax.swing.JFrame {
                 Double.parseDouble(defensa_lobo.getText()),
                 Double.parseDouble(salud_lobo.getText()),
                 Double.parseDouble(puntos_lobo.getText())));
-        DefaultTableModel modelo = (DefaultTableModel) tabla_guerreros.getModel();
+        DefaultTableModel modelo = (DefaultTableModel) tabla_bestias.getModel();
         Object[] newrow = {nombre_lobo.getText(),
             nickname_lobo.getText(), Double.parseDouble(ataque_lobo.getText()),
             Double.parseDouble(defensa_lobo.getText()),
             Double.parseDouble(salud_lobo.getText()), Double.parseDouble(puntos_lobo.getText())};
         modelo.addRow(newrow);
-        tabla_guerreros.setModel(modelo);
+        tabla_bestias.setModel(modelo);
         JOptionPane.showMessageDialog(this, " creado ");
         ag = new AdminGuerreros("./guerreros.cbm");
         ag.cargarArchivo();
@@ -826,13 +897,13 @@ public class Principal extends javax.swing.JFrame {
                 Double.parseDouble(defensa_minotauro.getText()),
                 Double.parseDouble(salud_minotauro.getText()),
                 Double.parseDouble(puntos_minotauro.getText())));
-        DefaultTableModel modelo = (DefaultTableModel) tabla_guerreros.getModel();
+        DefaultTableModel modelo = (DefaultTableModel) tabla_bestias.getModel();
         Object[] newrow = {nombre_minotauro.getText(),
             nickname_minotauro.getText(), Double.parseDouble(ataque_minotauro.getText()),
             Double.parseDouble(defensa_minotauro.getText()),
             Double.parseDouble(salud_minotauro.getText()), Double.parseDouble(puntos_minotauro.getText())};
         modelo.addRow(newrow);
-        tabla_guerreros.setModel(modelo);
+        tabla_bestias.setModel(modelo);
         JOptionPane.showMessageDialog(this, " creado ");
         ag = new AdminGuerreros("./guerreros.cbm");
         ag.cargarArchivo();
@@ -840,6 +911,50 @@ public class Principal extends javax.swing.JFrame {
         ag.escribirArchivo();
         Guardar(listaguerreros);
     }//GEN-LAST:event_crear_minotauroActionPerformed
+
+    private void tabla_alumnosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tabla_alumnosMouseClicked
+        // TODO add your handling code here:
+        if (evt.isMetaDown()) {
+            int pp = tabla_alumnos.getSelectedRow();
+            menu_popup_alumno.show(evt.getComponent(), evt.getX(), evt.getY());
+        }
+    }//GEN-LAST:event_tabla_alumnosMouseClicked
+
+    private void eliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminarActionPerformed
+        // TODO add your handling code here:
+        if (tabla_alumnos.getSelectedRow() >= 0) {
+            DefaultTableModel modelo = (DefaultTableModel) tabla_alumnos.getModel();
+            if (tabla_alumnos.getSelectedRow() != -1) {
+                listaguerreros.remove(tabla_alumnos.getSelectedRow());
+                modelo.removeRow(tabla_alumnos.getSelectedRow());
+            } else {
+                System.out.println("no hay nada seleccionado");
+            }
+            tabla_alumnos.setModel(modelo);
+        }
+    }//GEN-LAST:event_eliminarActionPerformed
+
+    private void tabla_bestiasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tabla_bestiasMouseClicked
+        // TODO add your handling code here:
+        if (evt.isMetaDown()) {
+            int pp = tabla_bestias.getSelectedRow();
+            menu_popup_bestias.show(evt.getComponent(), evt.getX(), evt.getY());
+        }
+    }//GEN-LAST:event_tabla_bestiasMouseClicked
+
+    private void eliminar_bestiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminar_bestiaActionPerformed
+        // TODO add your handling code here:
+        if (tabla_bestias.getSelectedRow() >= 0) {
+            DefaultTableModel modelo = (DefaultTableModel) tabla_bestias.getModel();
+            if (tabla_bestias.getSelectedRow() != -1) {
+                listaguerreros.remove(tabla_bestias.getSelectedRow());
+                modelo.removeRow(tabla_bestias.getSelectedRow());
+            } else {
+                System.out.println("no hay nada seleccionado");
+            }
+            tabla_alumnos.setModel(modelo);
+        }
+    }//GEN-LAST:event_eliminar_bestiaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -894,6 +1009,8 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTextField defensa_lobo;
     private javax.swing.JTextField defensa_minotauro;
     private javax.swing.JSpinner edad_alumno;
+    private javax.swing.JMenuItem eliminar;
+    private javax.swing.JMenuItem eliminar_bestia;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -936,10 +1053,16 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JTabbedPane jTabbedPane3;
+    private javax.swing.JPopupMenu menu_popup_alumno;
+    private javax.swing.JPopupMenu menu_popup_bestias;
+    private javax.swing.JMenuItem modificar;
+    private javax.swing.JMenuItem modificar_bestia;
     private javax.swing.JTextField nickname_alumno;
     private javax.swing.JTextField nickname_dragon;
     private javax.swing.JTextField nickname_fenix;
@@ -961,7 +1084,8 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTextField salud_fenix;
     private javax.swing.JTextField salud_lobo;
     private javax.swing.JTextField salud_minotauro;
-    private javax.swing.JTable tabla_guerreros;
+    private javax.swing.JTable tabla_alumnos;
+    private javax.swing.JTable tabla_bestias;
     // End of variables declaration//GEN-END:variables
 String nombre, nickname, carrera;
     int numero_cuenta, edad;
