@@ -54,13 +54,21 @@ public class Alumno extends Guerreros {
 
     @Override
     public String toString() {
-        return super.toString() + "Alumno{" + "numero_cuenta=" + numero_cuenta 
+        return super.toString() + "Alumno{" + "numero_cuenta=" + numero_cuenta
                 + ", carrera=" + carrera + ", edad=" + edad + '}';
     }
 
     @Override
-    public void Ataque() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void Ataque(Guerreros g) {
+        double vida_rival, resta, vida_alumno, porcentaje;
+        resta = this.getPoder_ataque() - g.getPoder_defensas();
+        vida_rival=g.getSalud()-resta;
+        g.setSalud(vida_rival);
+        porcentaje=this.getSalud()*0.25;
+        vida_alumno=this.getSalud()+porcentaje;
+        this.setSalud(vida_alumno);
+        
+
     }
 
 }

@@ -22,7 +22,7 @@ public abstract class Guerreros implements Serializable {
 
     private static final long SerialVersionUID = 777L;
 
-    public abstract void Ataque();
+    public abstract void Ataque(Guerreros g);
 
     public Guerreros() {
     }

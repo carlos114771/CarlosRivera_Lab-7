@@ -18,7 +18,6 @@ public class Fénix extends Guerreros {
     public Fénix(String nombre, String nickname, Double poder_ataque, Double poder_defensas, Double salud, Double puntos) {
         super(nombre, nickname, poder_ataque, poder_defensas, salud, puntos);
     }
-    
 
     @Override
     public String toString() {
@@ -26,8 +25,16 @@ public class Fénix extends Guerreros {
     }
 
     @Override
-    public void Ataque() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void Ataque(Guerreros g) {
+        double salud_rival;
+        double poder_ataque, ataque_rival1, ataque_rival2, resto_salud;
+        poder_ataque = g.getPoder_ataque() * .75;
+        salud_rival = (g.getPoder_ataque() + poder_ataque) - g.getPoder_defensas();
+        resto_salud = g.getSalud() * salud_rival;
+        g.setSalud(resto_salud);
+        ataque_rival1 = g.getPoder_ataque() * .05;
+        ataque_rival2 = g.getPoder_ataque() - ataque_rival1;
+        g.setPoder_ataque(ataque_rival2);
     }
 
 }

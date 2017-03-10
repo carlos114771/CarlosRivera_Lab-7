@@ -68,6 +68,40 @@ public class Principal extends javax.swing.JFrame {
         menu_popup_bestias = new javax.swing.JPopupMenu();
         eliminar_bestia = new javax.swing.JMenuItem();
         modificar_bestia = new javax.swing.JMenuItem();
+        jd_modificar_alumno = new javax.swing.JDialog();
+        jLabel32 = new javax.swing.JLabel();
+        nombre_alumno1 = new javax.swing.JTextField();
+        jLabel35 = new javax.swing.JLabel();
+        nickname_alumno1 = new javax.swing.JTextField();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        defensa_alumno1 = new javax.swing.JTextField();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        salud_alumno1 = new javax.swing.JTextField();
+        puntos_alumno1 = new javax.swing.JTextField();
+        modificar_alumno1 = new javax.swing.JButton();
+        jLabel40 = new javax.swing.JLabel();
+        edad_alumno1 = new javax.swing.JSpinner();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        numero_alumno1 = new javax.swing.JTextField();
+        carrera_alumno1 = new javax.swing.JTextField();
+        ataque_alumno1 = new javax.swing.JTextField();
+        jd_modificar_bestia = new javax.swing.JDialog();
+        jLabel43 = new javax.swing.JLabel();
+        nombre_bestia = new javax.swing.JTextField();
+        jLabel44 = new javax.swing.JLabel();
+        nickname_bestia = new javax.swing.JTextField();
+        jLabel45 = new javax.swing.JLabel();
+        ataque_bestia = new javax.swing.JTextField();
+        jLabel46 = new javax.swing.JLabel();
+        defensa_bestia = new javax.swing.JTextField();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
+        salud_bestia = new javax.swing.JTextField();
+        puntos_bestia = new javax.swing.JTextField();
+        bestia_modificat = new javax.swing.JButton();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         jTabbedPane2 = new javax.swing.JTabbedPane();
@@ -166,6 +200,11 @@ public class Principal extends javax.swing.JFrame {
         menu_popup_alumno.add(eliminar);
 
         modificar.setText("jMenuItem1");
+        modificar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                modificarActionPerformed(evt);
+            }
+        });
         menu_popup_alumno.add(modificar);
 
         eliminar_bestia.setText("jMenuItem1");
@@ -177,7 +216,224 @@ public class Principal extends javax.swing.JFrame {
         menu_popup_bestias.add(eliminar_bestia);
 
         modificar_bestia.setText("jMenuItem2");
+        modificar_bestia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                modificar_bestiaActionPerformed(evt);
+            }
+        });
         menu_popup_bestias.add(modificar_bestia);
+
+        jLabel32.setText("Nombre");
+
+        jLabel35.setText("NickName");
+
+        jLabel36.setText("Poder de Ataque");
+
+        jLabel37.setText("Poder de Defensa");
+
+        jLabel38.setText("Salud");
+
+        jLabel39.setText("Puntos");
+
+        puntos_alumno1.setEditable(false);
+        puntos_alumno1.setText("0");
+
+        modificar_alumno1.setText("Modificar");
+        modificar_alumno1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                modificar_alumno1ActionPerformed(evt);
+            }
+        });
+
+        jLabel40.setText("Edad");
+
+        jLabel41.setText("Numero de Cuenta");
+
+        jLabel42.setText("Carrera");
+
+        javax.swing.GroupLayout jd_modificar_alumnoLayout = new javax.swing.GroupLayout(jd_modificar_alumno.getContentPane());
+        jd_modificar_alumno.getContentPane().setLayout(jd_modificar_alumnoLayout);
+        jd_modificar_alumnoLayout.setHorizontalGroup(
+            jd_modificar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_modificar_alumnoLayout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addGroup(jd_modificar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jd_modificar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jLabel39, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel38, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel37, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel36, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel35, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel40, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jd_modificar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jLabel42, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel41, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGap(79, 79, 79)
+                .addGroup(jd_modificar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jd_modificar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jd_modificar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jd_modificar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jd_modificar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jd_modificar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(jd_modificar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(jd_modificar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addComponent(nickname_alumno1, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(nombre_alumno1, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(defensa_alumno1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(salud_alumno1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(puntos_alumno1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(edad_alumno1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(numero_alumno1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(carrera_alumno1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ataque_alumno1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 122, Short.MAX_VALUE)
+                .addComponent(modificar_alumno1)
+                .addGap(56, 56, 56))
+        );
+        jd_modificar_alumnoLayout.setVerticalGroup(
+            jd_modificar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_modificar_alumnoLayout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(jd_modificar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel32)
+                    .addComponent(nombre_alumno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(22, 22, 22)
+                .addGroup(jd_modificar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel35)
+                    .addComponent(nickname_alumno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_modificar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel36)
+                    .addComponent(ataque_alumno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_modificar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel37)
+                    .addComponent(defensa_alumno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jd_modificar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jd_modificar_alumnoLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(jd_modificar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel38)
+                            .addComponent(salud_alumno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jd_modificar_alumnoLayout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addComponent(modificar_alumno1)))
+                .addGap(18, 18, 18)
+                .addGroup(jd_modificar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel39)
+                    .addComponent(puntos_alumno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_modificar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel40)
+                    .addComponent(edad_alumno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jd_modificar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel41)
+                    .addComponent(numero_alumno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_modificar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel42)
+                    .addComponent(carrera_alumno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(18, Short.MAX_VALUE))
+        );
+
+        jLabel43.setText("Nombre");
+
+        jLabel44.setText("NickName");
+
+        jLabel45.setText("Poder de Ataque");
+
+        ataque_bestia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ataque_bestiaActionPerformed(evt);
+            }
+        });
+
+        jLabel46.setText("Poder de Defensa");
+
+        jLabel47.setText("Salud");
+
+        jLabel48.setText("Puntos");
+
+        puntos_bestia.setEditable(false);
+        puntos_bestia.setText("0");
+        puntos_bestia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                puntos_bestiaActionPerformed(evt);
+            }
+        });
+
+        bestia_modificat.setText("Crear");
+        bestia_modificat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bestia_modificatActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jd_modificar_bestiaLayout = new javax.swing.GroupLayout(jd_modificar_bestia.getContentPane());
+        jd_modificar_bestia.getContentPane().setLayout(jd_modificar_bestiaLayout);
+        jd_modificar_bestiaLayout.setHorizontalGroup(
+            jd_modificar_bestiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_modificar_bestiaLayout.createSequentialGroup()
+                .addGroup(jd_modificar_bestiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jd_modificar_bestiaLayout.createSequentialGroup()
+                        .addGap(28, 28, 28)
+                        .addGroup(jd_modificar_bestiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel48, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel47, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel46, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel45, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel44, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel43, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(83, 83, 83)
+                        .addGroup(jd_modificar_bestiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jd_modificar_bestiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jd_modificar_bestiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jd_modificar_bestiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(jd_modificar_bestiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(nickname_bestia, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(nombre_bestia, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(ataque_bestia, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(defensa_bestia, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(salud_bestia, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(puntos_bestia, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jd_modificar_bestiaLayout.createSequentialGroup()
+                        .addGap(248, 248, 248)
+                        .addComponent(bestia_modificat)))
+                .addContainerGap(227, Short.MAX_VALUE))
+        );
+        jd_modificar_bestiaLayout.setVerticalGroup(
+            jd_modificar_bestiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_modificar_bestiaLayout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(jd_modificar_bestiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel43)
+                    .addComponent(nombre_bestia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(22, 22, 22)
+                .addGroup(jd_modificar_bestiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel44)
+                    .addComponent(nickname_bestia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_modificar_bestiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel45)
+                    .addComponent(ataque_bestia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_modificar_bestiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel46)
+                    .addComponent(defensa_bestia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_modificar_bestiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel47)
+                    .addComponent(salud_bestia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_modificar_bestiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel48)
+                    .addComponent(puntos_bestia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(bestia_modificat)
+                .addContainerGap(52, Short.MAX_VALUE))
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -956,6 +1212,94 @@ public class Principal extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_eliminar_bestiaActionPerformed
 
+    private void modificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificarActionPerformed
+        // TODO add your handling code here:
+        this.jd_modificar_alumno.setModal(true);
+        this.jd_modificar_alumno.pack();
+        this.jd_modificar_alumno.setLocationRelativeTo(this);
+        this.jd_modificar_alumno.setVisible(true);
+    }//GEN-LAST:event_modificarActionPerformed
+
+    private void modificar_alumno1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificar_alumno1ActionPerformed
+        // TODO add your handling code here:
+         Alumno al = new Alumno(Integer.parseInt(numero_alumno.getText()),
+                carrera_alumno.getText(), (Integer) edad_alumno.getValue(),
+                nombre_alumno.getText(), nickname_alumno.getText(),
+                Double.parseDouble(ataque_alumno.getText()),
+                Double.parseDouble(defensa_alumno.getText()),
+                Double.parseDouble(salud_alumno.getText()),
+                Double.parseDouble(puntos_alumno.getText()));
+        listaguerreros.add(new Alumno(Integer.parseInt(numero_alumno.getText()),
+                carrera_alumno.getText(), (Integer) edad_alumno.getValue(),
+                nombre_alumno.getText(), nickname_alumno.getText(),
+                Double.parseDouble(ataque_alumno.getText()),
+                Double.parseDouble(defensa_alumno.getText()),
+                Double.parseDouble(salud_alumno.getText()),
+                Double.parseDouble(puntos_alumno.getText())));
+        DefaultTableModel modelo = (DefaultTableModel) tabla_alumnos.getModel();
+        Object[] newrow = {nombre_alumno.getText(),
+            nickname_alumno.getText(), Double.parseDouble(ataque_alumno.getText()),
+            Double.parseDouble(defensa_alumno.getText()),
+            Double.parseDouble(salud_alumno.getText()), Double.parseDouble(puntos_alumno.getText()),
+            Integer.parseInt(numero_alumno.getText()), carrera_alumno.getText(), edad_alumno.getValue()};
+        modelo.addRow(newrow);
+        tabla_alumnos.setModel(modelo);
+        JOptionPane.showMessageDialog(this, "Alumno Creado ");
+        ag = new AdminGuerreros("./guerreros.cbm");
+        ag.cargarArchivo();
+        ag.setGuerrero(al);
+        ag.escribirArchivo();
+        Guardar(listaguerreros);
+    }//GEN-LAST:event_modificar_alumno1ActionPerformed
+
+    private void modificar_bestiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificar_bestiaActionPerformed
+        // TODO add your handling code here:
+        this.jd_modificar_bestia.setModal(true);
+        this.jd_modificar_bestia.pack();
+        this.jd_modificar_bestia.setLocationRelativeTo(this);
+        this.jd_modificar_bestia.setVisible(true);
+    }//GEN-LAST:event_modificar_bestiaActionPerformed
+
+    private void bestia_modificatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bestia_modificatActionPerformed
+        // TODO add your handling code here:
+           Dragón drag = new Dragón(nombre_bestia.getText(),
+                nickname_bestia.getText(),
+                Double.parseDouble(ataque_bestia.getText()),
+                Double.parseDouble(defensa_bestia.getText()),
+                Double.parseDouble(salud_bestia.getText()),
+                Double.parseDouble(puntos_bestia.getText()));
+        listaguerreros.add(new Dragón(nombre_bestia.getText(),
+                nickname_bestia.getText(),
+                Double.parseDouble(ataque_bestia.getText()),
+                Double.parseDouble(defensa_bestia.getText()),
+                Double.parseDouble(salud_bestia.getText()),
+                Double.parseDouble(puntos_bestia.getText())));
+        DefaultTableModel modelo = (DefaultTableModel) tabla_bestias.getModel();
+        Object[] newrow = {nombre_bestia.getText(),
+                nickname_bestia.getText(),
+                Double.parseDouble(ataque_bestia.getText()),
+                Double.parseDouble(defensa_bestia.getText()),
+                Double.parseDouble(salud_bestia.getText()),
+                Double.parseDouble(puntos_bestia.getText())};
+        modelo.addRow(newrow);
+        tabla_bestias.setModel(modelo);
+        JOptionPane.showMessageDialog(this, "Dragon creado ");
+        ag = new AdminGuerreros("./guerreros.cbm");
+        ag.cargarArchivo();
+        ag.setGuerrero(drag);
+        ag.escribirArchivo();
+        Guardar(listaguerreros);
+        
+    }//GEN-LAST:event_bestia_modificatActionPerformed
+
+    private void ataque_bestiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ataque_bestiaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ataque_bestiaActionPerformed
+
+    private void puntos_bestiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_puntos_bestiaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_puntos_bestiaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -993,22 +1337,29 @@ public class Principal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField ataque_alumno;
+    private javax.swing.JTextField ataque_alumno1;
+    private javax.swing.JTextField ataque_bestia;
     private javax.swing.JTextField ataque_dragon;
     private javax.swing.JTextField ataque_fenix;
     private javax.swing.JTextField ataque_lobo;
     private javax.swing.JTextField ataque_minotauro;
+    private javax.swing.JButton bestia_modificat;
     private javax.swing.JTextField carrera_alumno;
+    private javax.swing.JTextField carrera_alumno1;
     private javax.swing.JButton crear_alumno;
     private javax.swing.JButton crear_dragon;
     private javax.swing.JButton crear_fenix;
     private javax.swing.JButton crear_hombre_lobo;
     private javax.swing.JButton crear_minotauro;
     private javax.swing.JTextField defensa_alumno;
+    private javax.swing.JTextField defensa_alumno1;
+    private javax.swing.JTextField defensa_bestia;
     private javax.swing.JTextField defensa_dragon;
     private javax.swing.JTextField defensa_fenix;
     private javax.swing.JTextField defensa_lobo;
     private javax.swing.JTextField defensa_minotauro;
     private javax.swing.JSpinner edad_alumno;
+    private javax.swing.JSpinner edad_alumno1;
     private javax.swing.JMenuItem eliminar;
     private javax.swing.JMenuItem eliminar_bestia;
     private javax.swing.JLabel jLabel1;
@@ -1036,9 +1387,24 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -1059,27 +1425,39 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JTabbedPane jTabbedPane3;
+    private javax.swing.JDialog jd_modificar_alumno;
+    private javax.swing.JDialog jd_modificar_bestia;
     private javax.swing.JPopupMenu menu_popup_alumno;
     private javax.swing.JPopupMenu menu_popup_bestias;
     private javax.swing.JMenuItem modificar;
+    private javax.swing.JButton modificar_alumno1;
     private javax.swing.JMenuItem modificar_bestia;
     private javax.swing.JTextField nickname_alumno;
+    private javax.swing.JTextField nickname_alumno1;
+    private javax.swing.JTextField nickname_bestia;
     private javax.swing.JTextField nickname_dragon;
     private javax.swing.JTextField nickname_fenix;
     private javax.swing.JTextField nickname_lobo;
     private javax.swing.JTextField nickname_minotauro;
     private javax.swing.JTextField nombre_alumno;
+    private javax.swing.JTextField nombre_alumno1;
+    private javax.swing.JTextField nombre_bestia;
     private javax.swing.JTextField nombre_dragon;
     private javax.swing.JTextField nombre_fenix;
     private javax.swing.JTextField nombre_lobo;
     private javax.swing.JTextField nombre_minotauro;
     private javax.swing.JTextField numero_alumno;
+    private javax.swing.JTextField numero_alumno1;
     private javax.swing.JTextField puntos_alumno;
+    private javax.swing.JTextField puntos_alumno1;
+    private javax.swing.JTextField puntos_bestia;
     private javax.swing.JTextField puntos_dragon;
     private javax.swing.JTextField puntos_fenix;
     private javax.swing.JTextField puntos_lobo;
     private javax.swing.JTextField puntos_minotauro;
     private javax.swing.JTextField salud_alumno;
+    private javax.swing.JTextField salud_alumno1;
+    private javax.swing.JTextField salud_bestia;
     private javax.swing.JTextField salud_dragon;
     private javax.swing.JTextField salud_fenix;
     private javax.swing.JTextField salud_lobo;
@@ -1097,4 +1475,6 @@ String nombre, nickname, carrera;
     AdminMinotauro am;
     AdminGuerreros ag;
     ArrayList listaguerreros = new ArrayList();
+    
+   
 }

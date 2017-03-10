@@ -25,8 +25,11 @@ public class Hombre_Lobo extends Guerreros {
     }
 
     @Override
-    public void Ataque() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void Ataque(Guerreros g) {
+        double vida_rival1, vida_rival2;
+        vida_rival1 = this.getPoder_ataque() - getPoder_defensas();
+        vida_rival2 = g.getSalud() - vida_rival1;
+        g.setSalud(vida_rival2);
     }
 
 }

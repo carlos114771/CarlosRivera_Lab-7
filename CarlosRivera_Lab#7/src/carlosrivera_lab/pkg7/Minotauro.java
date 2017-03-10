@@ -26,8 +26,16 @@ public class Minotauro extends Guerreros {
     }
 
     @Override
-    public void Ataque() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void Ataque(Guerreros g) {
+        double vida1, vida2, porciento, suma, ataque1, ataque2;
+        porciento = g.getPoder_defensas() * .50;
+        suma = g.getPoder_defensas() * porciento;
+        vida1 = (this.getPoder_ataque() * 2) - suma;
+        vida2 = g.getSalud() - vida1;
+        g.setSalud(vida2);
+        ataque1 = g.getPoder_ataque() * .10;
+        ataque2 = g.getPoder_ataque() * ataque1;
+        g.setPoder_ataque(ataque2);
     }
 
 }
