@@ -89,60 +89,60 @@ public class Principal extends javax.swing.JFrame {
         jTabbedPane3 = new javax.swing.JTabbedPane();
         jPanel5 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
+        nombre_dragon = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
+        nickname_dragon = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
+        ataque_dragon = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
+        defensa_dragon = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jTextField11 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
+        salud_dragon = new javax.swing.JTextField();
+        puntos_dragon = new javax.swing.JTextField();
+        crear_dragon = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
-        jTextField13 = new javax.swing.JTextField();
+        nombre_fenix = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
-        jTextField14 = new javax.swing.JTextField();
+        nickname_fenix = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
-        jTextField15 = new javax.swing.JTextField();
+        ataque_fenix = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
-        jTextField16 = new javax.swing.JTextField();
+        defensa_fenix = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
-        jTextField17 = new javax.swing.JTextField();
-        jTextField18 = new javax.swing.JTextField();
-        jButton3 = new javax.swing.JButton();
+        salud_fenix = new javax.swing.JTextField();
+        puntos_fenix = new javax.swing.JTextField();
+        crear_fenix = new javax.swing.JButton();
         jPanel7 = new javax.swing.JPanel();
         jLabel19 = new javax.swing.JLabel();
-        jTextField19 = new javax.swing.JTextField();
+        nombre_lobo = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
-        jTextField20 = new javax.swing.JTextField();
+        nickname_lobo = new javax.swing.JTextField();
         jLabel21 = new javax.swing.JLabel();
-        jTextField21 = new javax.swing.JTextField();
+        ataque_lobo = new javax.swing.JTextField();
         jLabel22 = new javax.swing.JLabel();
-        jTextField22 = new javax.swing.JTextField();
+        defensa_lobo = new javax.swing.JTextField();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
-        jTextField23 = new javax.swing.JTextField();
-        jTextField24 = new javax.swing.JTextField();
-        jButton4 = new javax.swing.JButton();
+        salud_lobo = new javax.swing.JTextField();
+        puntos_lobo = new javax.swing.JTextField();
+        crear_hombre_lobo = new javax.swing.JButton();
         jPanel8 = new javax.swing.JPanel();
         jLabel25 = new javax.swing.JLabel();
-        jTextField25 = new javax.swing.JTextField();
+        nombre_minotauro = new javax.swing.JTextField();
         jLabel26 = new javax.swing.JLabel();
-        jTextField26 = new javax.swing.JTextField();
+        nickname_minotauro = new javax.swing.JTextField();
         jLabel27 = new javax.swing.JLabel();
-        jTextField27 = new javax.swing.JTextField();
+        ataque_minotauro = new javax.swing.JTextField();
         jLabel28 = new javax.swing.JLabel();
-        jTextField28 = new javax.swing.JTextField();
+        defensa_minotauro = new javax.swing.JTextField();
         jLabel29 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
-        jTextField29 = new javax.swing.JTextField();
-        jTextField30 = new javax.swing.JTextField();
-        jButton5 = new javax.swing.JButton();
+        salud_minotauro = new javax.swing.JTextField();
+        puntos_minotauro = new javax.swing.JTextField();
+        crear_minotauro = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tabla_guerreros = new javax.swing.JTable();
@@ -276,7 +276,12 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel12.setText("Puntos");
 
-        jButton2.setText("Crear");
+        crear_dragon.setText("Crear");
+        crear_dragon.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                crear_dragonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -299,15 +304,15 @@ public class Principal extends javax.swing.JFrame {
                                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addComponent(jTextField9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jTextField10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jTextField11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jTextField12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                            .addComponent(nickname_dragon, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(nombre_dragon, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(ataque_dragon, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(defensa_dragon, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(salud_dragon, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(puntos_dragon, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGap(229, 229, 229)
-                        .addComponent(jButton2)))
+                        .addComponent(crear_dragon)))
                 .addContainerGap(227, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
@@ -316,29 +321,29 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(24, 24, 24)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(nombre_dragon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(22, 22, 22)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(nickname_dragon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ataque_dragon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
-                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(defensa_dragon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel11)
-                    .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(salud_dragon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
-                    .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(puntos_dragon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jButton2)
+                .addComponent(crear_dragon)
                 .addContainerGap(67, Short.MAX_VALUE))
         );
 
@@ -356,7 +361,12 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel18.setText("Puntos");
 
-        jButton3.setText("Crear");
+        crear_fenix.setText("Crear");
+        crear_fenix.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                crear_fenixActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -379,15 +389,15 @@ public class Principal extends javax.swing.JFrame {
                                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addComponent(jTextField15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jTextField16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jTextField17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jTextField18, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                            .addComponent(nickname_fenix, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(nombre_fenix, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(ataque_fenix, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(defensa_fenix, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(salud_fenix, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(puntos_fenix, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(250, 250, 250)
-                        .addComponent(jButton3)))
+                        .addGap(244, 244, 244)
+                        .addComponent(crear_fenix)))
                 .addContainerGap(227, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
@@ -396,30 +406,30 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(24, 24, 24)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13)
-                    .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(nombre_fenix, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(22, 22, 22)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel14)
-                    .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(nickname_fenix, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel15)
-                    .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ataque_fenix, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel16)
-                    .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(defensa_fenix, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel17)
-                    .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(salud_fenix, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel18)
-                    .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
-                .addComponent(jButton3)
-                .addContainerGap())
+                    .addComponent(puntos_fenix, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(39, 39, 39)
+                .addComponent(crear_fenix)
+                .addContainerGap(46, Short.MAX_VALUE))
         );
 
         jTabbedPane3.addTab("Fénix", jPanel6);
@@ -436,7 +446,12 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel24.setText("Puntos");
 
-        jButton4.setText("Crear");
+        crear_hombre_lobo.setText("Crear");
+        crear_hombre_lobo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                crear_hombre_loboActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -459,15 +474,15 @@ public class Principal extends javax.swing.JFrame {
                                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addComponent(jTextField21, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jTextField22, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jTextField23, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jTextField24, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                            .addComponent(nickname_lobo, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(nombre_lobo, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(ataque_lobo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(defensa_lobo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(salud_lobo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(puntos_lobo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addGap(250, 250, 250)
-                        .addComponent(jButton4)))
+                        .addComponent(crear_hombre_lobo)))
                 .addContainerGap(227, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
@@ -476,29 +491,29 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(24, 24, 24)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel19)
-                    .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(nombre_lobo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(22, 22, 22)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel20)
-                    .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(nickname_lobo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel21)
-                    .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ataque_lobo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel22)
-                    .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(defensa_lobo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel23)
-                    .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(salud_lobo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel24)
-                    .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(puntos_lobo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jButton4)
+                .addComponent(crear_hombre_lobo)
                 .addContainerGap(67, Short.MAX_VALUE))
         );
 
@@ -516,7 +531,12 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel30.setText("Puntos");
 
-        jButton5.setText("Crear");
+        crear_minotauro.setText("Crear");
+        crear_minotauro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                crear_minotauroActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -539,15 +559,15 @@ public class Principal extends javax.swing.JFrame {
                                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addComponent(jTextField27, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jTextField28, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jTextField29, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jTextField30, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                            .addComponent(nickname_minotauro, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(nombre_minotauro, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(ataque_minotauro, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(defensa_minotauro, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(salud_minotauro, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(puntos_minotauro, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addGap(248, 248, 248)
-                        .addComponent(jButton5)))
+                        .addComponent(crear_minotauro)))
                 .addContainerGap(227, Short.MAX_VALUE))
         );
         jPanel8Layout.setVerticalGroup(
@@ -556,29 +576,29 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(24, 24, 24)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel25)
-                    .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(nombre_minotauro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(22, 22, 22)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel26)
-                    .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(nickname_minotauro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel27)
-                    .addComponent(jTextField27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ataque_minotauro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel28)
-                    .addComponent(jTextField28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(defensa_minotauro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel29)
-                    .addComponent(jTextField29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(salud_minotauro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel30)
-                    .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(puntos_minotauro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jButton5)
+                .addComponent(crear_minotauro)
                 .addContainerGap(67, Short.MAX_VALUE))
         );
 
@@ -682,6 +702,13 @@ public class Principal extends javax.swing.JFrame {
                 Double.parseDouble(defensa_alumno.getText()),
                 Double.parseDouble(salud_alumno.getText()),
                 Double.parseDouble(puntos_alumno.getText()));
+        listaguerreros.add(new Alumno(Integer.parseInt(numero_alumno.getText()),
+                carrera_alumno.getText(), (Integer) edad_alumno.getValue(),
+                nombre_alumno.getText(), nickname_alumno.getText(),
+                Double.parseDouble(ataque_alumno.getText()),
+                Double.parseDouble(defensa_alumno.getText()),
+                Double.parseDouble(salud_alumno.getText()),
+                Double.parseDouble(puntos_alumno.getText())));
         DefaultTableModel modelo = (DefaultTableModel) tabla_guerreros.getModel();
         Object[] newrow = {nombre_alumno.getText(),
             nickname_alumno.getText(), Double.parseDouble(ataque_alumno.getText()),
@@ -690,12 +717,129 @@ public class Principal extends javax.swing.JFrame {
             Integer.parseInt(numero_alumno.getText()), carrera_alumno.getText(), edad_alumno.getValue()};
         modelo.addRow(newrow);
         tabla_guerreros.setModel(modelo);
+        JOptionPane.showMessageDialog(this, "Alumno Creado ");
         ag = new AdminGuerreros("./guerreros.cbm");
         ag.cargarArchivo();
         ag.setGuerrero(al);
         ag.escribirArchivo();
-        JOptionPane.showMessageDialog(this, "Alumno Creado ");
+        Guardar(listaguerreros);
     }//GEN-LAST:event_crear_alumnoActionPerformed
+
+    private void crear_dragonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crear_dragonActionPerformed
+        // TODO add your handling code here:
+        Dragón drag = new Dragón(nombre_dragon.getText(),
+                nickname_dragon.getText(),
+                Double.parseDouble(ataque_dragon.getText()),
+                Double.parseDouble(defensa_dragon.getText()),
+                Double.parseDouble(salud_dragon.getText()),
+                Double.parseDouble(puntos_dragon.getText()));
+        listaguerreros.add(new Dragón(nombre_dragon.getText(),
+                nickname_dragon.getText(),
+                Double.parseDouble(ataque_dragon.getText()),
+                Double.parseDouble(defensa_dragon.getText()),
+                Double.parseDouble(salud_dragon.getText()),
+                Double.parseDouble(puntos_dragon.getText())));
+        DefaultTableModel modelo = (DefaultTableModel) tabla_guerreros.getModel();
+        Object[] newrow = {nombre_dragon.getText(),
+            nickname_dragon.getText(), Double.parseDouble(ataque_dragon.getText()),
+            Double.parseDouble(defensa_dragon.getText()),
+            Double.parseDouble(salud_dragon.getText()), Double.parseDouble(puntos_dragon.getText())};
+        modelo.addRow(newrow);
+        tabla_guerreros.setModel(modelo);
+        JOptionPane.showMessageDialog(this, "Dragon creado ");
+        ag = new AdminGuerreros("./guerreros.cbm");
+        ag.cargarArchivo();
+        ag.setGuerrero(drag);
+        ag.escribirArchivo();
+        Guardar(listaguerreros);
+    }//GEN-LAST:event_crear_dragonActionPerformed
+
+    private void crear_fenixActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crear_fenixActionPerformed
+        // TODO add your handling code here:
+        Fénix fen = new Fénix(nombre_fenix.getText(),
+                nickname_fenix.getText(),
+                Double.parseDouble(ataque_fenix.getText()),
+                Double.parseDouble(defensa_fenix.getText()),
+                Double.parseDouble(salud_fenix.getText()),
+                Double.parseDouble(puntos_fenix.getText()));
+        listaguerreros.add(new Fénix(nombre_fenix.getText(),
+                nickname_fenix.getText(),
+                Double.parseDouble(ataque_fenix.getText()),
+                Double.parseDouble(defensa_fenix.getText()),
+                Double.parseDouble(salud_fenix.getText()),
+                Double.parseDouble(puntos_fenix.getText())));
+        DefaultTableModel modelo = (DefaultTableModel) tabla_guerreros.getModel();
+        Object[] newrow = {nombre_fenix.getText(),
+            nickname_fenix.getText(), Double.parseDouble(ataque_fenix.getText()),
+            Double.parseDouble(defensa_fenix.getText()),
+            Double.parseDouble(salud_fenix.getText()), Double.parseDouble(puntos_fenix.getText())};
+        modelo.addRow(newrow);
+        tabla_guerreros.setModel(modelo);
+        JOptionPane.showMessageDialog(this, "Fenix creado ");
+        ag = new AdminGuerreros("./guerreros.cbm");
+        ag.cargarArchivo();
+        ag.setGuerrero(fen);
+        ag.escribirArchivo();
+        Guardar(listaguerreros);
+    }//GEN-LAST:event_crear_fenixActionPerformed
+
+    private void crear_hombre_loboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crear_hombre_loboActionPerformed
+        // TODO add your handling code here:
+        Hombre_Lobo hombre = new Hombre_Lobo(nombre_lobo.getText(),
+                nickname_lobo.getText(),
+                Double.parseDouble(ataque_lobo.getText()),
+                Double.parseDouble(defensa_lobo.getText()),
+                Double.parseDouble(salud_lobo.getText()),
+                Double.parseDouble(puntos_lobo.getText()));
+        listaguerreros.add(new Hombre_Lobo(nombre_lobo.getText(),
+                nickname_lobo.getText(),
+                Double.parseDouble(ataque_lobo.getText()),
+                Double.parseDouble(defensa_lobo.getText()),
+                Double.parseDouble(salud_lobo.getText()),
+                Double.parseDouble(puntos_lobo.getText())));
+        DefaultTableModel modelo = (DefaultTableModel) tabla_guerreros.getModel();
+        Object[] newrow = {nombre_lobo.getText(),
+            nickname_lobo.getText(), Double.parseDouble(ataque_lobo.getText()),
+            Double.parseDouble(defensa_lobo.getText()),
+            Double.parseDouble(salud_lobo.getText()), Double.parseDouble(puntos_lobo.getText())};
+        modelo.addRow(newrow);
+        tabla_guerreros.setModel(modelo);
+        JOptionPane.showMessageDialog(this, " creado ");
+        ag = new AdminGuerreros("./guerreros.cbm");
+        ag.cargarArchivo();
+        ag.setGuerrero(hombre);
+        ag.escribirArchivo();
+        Guardar(listaguerreros);
+    }//GEN-LAST:event_crear_hombre_loboActionPerformed
+
+    private void crear_minotauroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crear_minotauroActionPerformed
+        // TODO add your handling code here:
+        Minotauro min = new Minotauro(nombre_minotauro.getText(),
+                nickname_minotauro.getText(),
+                Double.parseDouble(ataque_minotauro.getText()),
+                Double.parseDouble(defensa_minotauro.getText()),
+                Double.parseDouble(salud_minotauro.getText()),
+                Double.parseDouble(puntos_minotauro.getText()));
+        listaguerreros.add(new Minotauro(nombre_minotauro.getText(),
+                nickname_minotauro.getText(),
+                Double.parseDouble(ataque_minotauro.getText()),
+                Double.parseDouble(defensa_minotauro.getText()),
+                Double.parseDouble(salud_minotauro.getText()),
+                Double.parseDouble(puntos_minotauro.getText())));
+        DefaultTableModel modelo = (DefaultTableModel) tabla_guerreros.getModel();
+        Object[] newrow = {nombre_minotauro.getText(),
+            nickname_minotauro.getText(), Double.parseDouble(ataque_minotauro.getText()),
+            Double.parseDouble(defensa_minotauro.getText()),
+            Double.parseDouble(salud_minotauro.getText()), Double.parseDouble(puntos_minotauro.getText())};
+        modelo.addRow(newrow);
+        tabla_guerreros.setModel(modelo);
+        JOptionPane.showMessageDialog(this, " creado ");
+        ag = new AdminGuerreros("./guerreros.cbm");
+        ag.cargarArchivo();
+        ag.setGuerrero(min);
+        ag.escribirArchivo();
+        Guardar(listaguerreros);
+    }//GEN-LAST:event_crear_minotauroActionPerformed
 
     /**
      * @param args the command line arguments
@@ -734,14 +878,22 @@ public class Principal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField ataque_alumno;
+    private javax.swing.JTextField ataque_dragon;
+    private javax.swing.JTextField ataque_fenix;
+    private javax.swing.JTextField ataque_lobo;
+    private javax.swing.JTextField ataque_minotauro;
     private javax.swing.JTextField carrera_alumno;
     private javax.swing.JButton crear_alumno;
+    private javax.swing.JButton crear_dragon;
+    private javax.swing.JButton crear_fenix;
+    private javax.swing.JButton crear_hombre_lobo;
+    private javax.swing.JButton crear_minotauro;
     private javax.swing.JTextField defensa_alumno;
+    private javax.swing.JTextField defensa_dragon;
+    private javax.swing.JTextField defensa_fenix;
+    private javax.swing.JTextField defensa_lobo;
+    private javax.swing.JTextField defensa_minotauro;
     private javax.swing.JSpinner edad_alumno;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -788,35 +940,27 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JTabbedPane jTabbedPane3;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField19;
-    private javax.swing.JTextField jTextField20;
-    private javax.swing.JTextField jTextField21;
-    private javax.swing.JTextField jTextField22;
-    private javax.swing.JTextField jTextField23;
-    private javax.swing.JTextField jTextField24;
-    private javax.swing.JTextField jTextField25;
-    private javax.swing.JTextField jTextField26;
-    private javax.swing.JTextField jTextField27;
-    private javax.swing.JTextField jTextField28;
-    private javax.swing.JTextField jTextField29;
-    private javax.swing.JTextField jTextField30;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
     private javax.swing.JTextField nickname_alumno;
+    private javax.swing.JTextField nickname_dragon;
+    private javax.swing.JTextField nickname_fenix;
+    private javax.swing.JTextField nickname_lobo;
+    private javax.swing.JTextField nickname_minotauro;
     private javax.swing.JTextField nombre_alumno;
+    private javax.swing.JTextField nombre_dragon;
+    private javax.swing.JTextField nombre_fenix;
+    private javax.swing.JTextField nombre_lobo;
+    private javax.swing.JTextField nombre_minotauro;
     private javax.swing.JTextField numero_alumno;
     private javax.swing.JTextField puntos_alumno;
+    private javax.swing.JTextField puntos_dragon;
+    private javax.swing.JTextField puntos_fenix;
+    private javax.swing.JTextField puntos_lobo;
+    private javax.swing.JTextField puntos_minotauro;
     private javax.swing.JTextField salud_alumno;
+    private javax.swing.JTextField salud_dragon;
+    private javax.swing.JTextField salud_fenix;
+    private javax.swing.JTextField salud_lobo;
+    private javax.swing.JTextField salud_minotauro;
     private javax.swing.JTable tabla_guerreros;
     // End of variables declaration//GEN-END:variables
 String nombre, nickname, carrera;
