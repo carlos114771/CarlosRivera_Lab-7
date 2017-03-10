@@ -9,7 +9,7 @@ package carlosrivera_lab.pkg7;
  *
  * @author Usuario Dell
  */
-public class Minotauro extends Bestia {
+public class Minotauro extends Guerreros {
 
     public Minotauro() {
         super();

@@ -9,7 +9,7 @@ package carlosrivera_lab.pkg7;
  *
  * @author Usuario Dell
  */
-public class Dragón extends Bestia{
+public class Dragón extends Guerreros{
 
     public Dragón() {
         super();

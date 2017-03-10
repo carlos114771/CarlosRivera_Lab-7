@@ -58,4 +58,9 @@ public class Alumno extends Guerreros {
                 + ", carrera=" + carrera + ", edad=" + edad + '}';
     }
 
+    @Override
+    public void Ataque() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }

@@ -9,7 +9,7 @@ package carlosrivera_lab.pkg7;
  *
  * @author Usuario Dell
  */
-public class Hombre_Lobo extends Bestia {
+public class Hombre_Lobo extends Guerreros {
 
     public Hombre_Lobo() {
         super();

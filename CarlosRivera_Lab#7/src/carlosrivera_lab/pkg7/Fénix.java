@@ -9,7 +9,7 @@ package carlosrivera_lab.pkg7;
  *
  * @author Usuario Dell
  */
-public class Fénix extends Bestia {
+public class Fénix extends Guerreros {
 
     public Fénix() {
         super();

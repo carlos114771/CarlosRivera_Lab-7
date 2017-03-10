@@ -11,7 +11,7 @@ import java.io.Serializable;
  *
  * @author Usuario Dell
  */
-public class Guerreros  implements Serializable{
+public abstract class Guerreros implements Serializable {
 
     String nombre;
     String nickname;
@@ -19,8 +19,10 @@ public class Guerreros  implements Serializable{
     Double poder_defensas;
     Double salud;
     Double puntos;
-    
+
     private static final long SerialVersionUID = 777L;
+
+    public abstract void Ataque();
 
     public Guerreros() {
     }
